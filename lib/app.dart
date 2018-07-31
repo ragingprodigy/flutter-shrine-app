@@ -9,6 +9,9 @@ class ShrineApp extends StatelessWidget {
     // TODO: implement build
     return MaterialApp(
       title: 'Shrine',
+      theme: ThemeData(
+        primaryColor: Colors.white,
+      ),
       home: HomePage(),
       initialRoute: '/login',
       onGenerateRoute: _getRoute,
