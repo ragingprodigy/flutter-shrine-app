@@ -21,7 +21,37 @@ class _LoginWidgetState extends State<LoginWidget> {
                 Text('SHRINE')
               ],
             ),
-            SizedBox(height: 120.0)
+            SizedBox(height: 120.0),
+            TextField(
+              decoration: InputDecoration(
+                filled: true,
+                labelText: 'Username',
+              ),
+            ),
+            SizedBox(height: 12.0,),
+            TextField(
+              decoration: InputDecoration(
+                filled: true,
+                labelText: 'Password'
+              ),
+              obscureText: true,
+            ),
+            ButtonBar(
+              children: <Widget>[
+                FlatButton(
+                  child: Text('CANCEL'),
+                  onPressed: () {
+
+                  },
+                ),
+                RaisedButton(
+                  child: Text("LOGIN"),
+                  onPressed: () {
+
+                  },
+                )
+              ],
+            )
           ],
         ),
       ),
