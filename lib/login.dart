@@ -53,7 +53,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                 RaisedButton(
                   child: Text("LOGIN"),
                   onPressed: () {
-
+                    Navigator.pop(context);
                   },
                 )
               ],
