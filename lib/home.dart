@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
           ),
           IconButton(
             icon: Icon(
-              Icons.filter,
+              Icons.tune,
               semanticLabel: 'filter',
             ),
             onPressed: () {
