@@ -6,6 +6,9 @@ class LoginWidget extends StatefulWidget {
 }
 
 class _LoginWidgetState extends State<LoginWidget> {
+  final _usernameController = TextEditingController();
+  final _passwordController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,6 +26,7 @@ class _LoginWidgetState extends State<LoginWidget> {
             ),
             SizedBox(height: 120.0),
             TextField(
+              controller: _usernameController,
               decoration: InputDecoration(
                 filled: true,
                 labelText: 'Username',
@@ -30,6 +34,7 @@ class _LoginWidgetState extends State<LoginWidget> {
             ),
             SizedBox(height: 12.0,),
             TextField(
+              controller: _passwordController,
               decoration: InputDecoration(
                 filled: true,
                 labelText: 'Password'
@@ -41,7 +46,8 @@ class _LoginWidgetState extends State<LoginWidget> {
                 FlatButton(
                   child: Text('CANCEL'),
                   onPressed: () {
-
+                    _usernameController.clear();
+                    _passwordController.clear();
                   },
                 ),
                 RaisedButton(
